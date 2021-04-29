@@ -29,7 +29,18 @@ kubectl scale replicaset [replica set name] --replicas [number of replicas]
 
 > Ao atualizar o replica set com uma nova versão da imagem do container, apenas novos pods são criados com a versão nova definda.
 
+### Service
+- ClusterIP (expose pod internally)
+- NodePort (expose externally through any node's ip of cluster)
+- LoadBalance (integrates with cloud service to define external ip to acces the service)
+
+
 ### Info
 ```
 kubectl get pods -o wide
+```
+
+### Rollout
+```
+kubectl rollout undo deployment meudeployment 
 ```
