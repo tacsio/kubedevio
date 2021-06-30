@@ -40,6 +40,11 @@ kubectl scale replicaset [replica set name] --replicas [number of replicas]
 kubectl get pods -o wide
 ```
 
+> Criar recursivamente a partir do diretório
+```
+kubectl apply -f [path] -R
+```
+
 ### Rollout
 ```
 kubectl rollout undo deployment meudeployment 
